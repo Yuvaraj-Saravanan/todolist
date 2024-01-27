@@ -13,7 +13,7 @@ function update(){
     inp.value=null
     store()
 }
-function del(){
+function del(event){
     event.target.parentElement.remove()
     store()
 }
