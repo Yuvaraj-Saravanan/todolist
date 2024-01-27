@@ -2,7 +2,7 @@
 var inp=document.getElementById("new")
 var listcontainer=document.getElementById("list-container")
 function update(){
-    if(inp.value==null){
+    if(inp.value==""){
         alert("Enter the task")
     }
     else{
