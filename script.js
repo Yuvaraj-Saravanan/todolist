@@ -11,16 +11,7 @@ function update(){
     buton.setAttribute("onclick","del(event)")
     newitem.append(buton)
     inp.value=null
-    store()
 }
 function del(event){
     event.target.parentElement.remove()
-    store()
 }
-function store(){
-    localStorage.setItem("data",listcontainer.innerHTML)
-}
-function show(){
-    listcontainer.innerHTML=localStorage.getItem("data")
-}
-show()
