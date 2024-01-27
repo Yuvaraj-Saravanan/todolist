@@ -2,6 +2,10 @@
 var inp=document.getElementById("new")
 var listcontainer=document.getElementById("list-container")
 function update(){
+    if(inp.value==null){
+        alert("Enter the task")
+    }
+    else{
     newitem=document.createElement("li")
     newitem.innerHTML=inp.value
     listcontainer.append(newitem)
@@ -11,6 +15,7 @@ function update(){
     buton.setAttribute("onclick","del(event)")
     newitem.append(buton)
     inp.value=null
+    }
 }
 function del(event){
     event.target.parentElement.remove()
